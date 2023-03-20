@@ -6,30 +6,3 @@ public class Main {
 
     }
 }
-
-class Counter {
-    int value;
-    int min;
-    int max;
-
-    void init(int min, int max) {
-        this.min = min;
-        this.max = max;
-    }
-
-    void inc() {
-        if (value < max) {
-            value++;
-        } else {
-            throw new IllegalStateException("Ogiltigt värde");
-        }
-    }
-
-    void dec() {
-        if (value > min) {
-            value--;
-        } else {
-            throw new IllegalStateException("Ogiltigt värde");
-        }
-    }
-}
